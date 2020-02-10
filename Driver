@@ -6,7 +6,7 @@ normal=`echo "\033[m"`
     bgred=`echo "\033[41m"`
     fgred=`echo "\033[31m"`
 YELLOW='\033[1;33m'
-printf "${menu}     © ᴘᴇɴᴇᴛʀᴀᴛᴏʀs                  ᴄᴏʀᴘᴏʀᴀᴛɪᴏɴ ©      "
+printf "${menu}     © RDX PROJECT DORMIR ©      "
 printf "${menu}           ♛ α cσмρℓεтεℓү αυтσмαтε∂ ρяσנεcт ♛         "
 cat /data/data/com.termux/files/home/Trident/pytransform/Trident | lolcat -a -d 5
    ./Header
