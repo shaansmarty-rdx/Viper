@@ -79,7 +79,7 @@ sleep 6
 chmod 664 /data/data/com.pubg.krmobile/lib/libtersafe.so
 chmod 664 /data/data/com.pubg.krmobile/lib/libUE4.so
 chmod 664 /data/data/com.pubg.krmobile/lib/libtprt.so
-sleep 20
+sleep 60
 c=0
 PACKAGE='com.pubg.krmobile'
 while [ $(pidof $PACKAGE) ]
@@ -237,7 +237,7 @@ sleep 6
 chmod 664 /data/data/com.tencent.ig/lib/libtersafe.so
 chmod 664 /data/data/com.tencent.ig/lib/libUE4.so
 chmod 664 /data/data/com.tencent.ig/lib/libtprt.so
-sleep 20
+sleep 60
 c=0
 PACKAGE='com.tencent.ig'
 while [ $(pidof $PACKAGE) ]
