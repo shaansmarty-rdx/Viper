@@ -174,7 +174,7 @@ done
 chmod 755 /data/data/com.pubg.krmobile/lib/libtersafe.so
 chmod 755 /data/data/com.pubg.krmobile/lib/libUE4.so
 chmod 755 /data/data/com.pubg.krmobile/lib/libtprt.so
-rm /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
 echo " "
 rsync -avh /storage/emulated/0/Android/Trident.Korea/ /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ &> /dev/null
 sleep 9
@@ -333,7 +333,7 @@ done
 chmod 755 /data/data/com.tencent.ig/lib/libtersafe.so
 chmod 755 /data/data/com.tencent.ig/lib/libUE4.so
 chmod 755 /data/data/com.tencent.ig/lib/libtprt.so
-rm /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
 echo " "
 rsync -avh /storage/emulated/0/Android/Trident.Global/ /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ &> /dev/null
 sleep 9
