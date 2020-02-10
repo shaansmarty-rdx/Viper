@@ -1,0 +1,580 @@
+#!/bin/sh
+show_menu(){
+normal=`echo "\033[m"`
+    menu=`echo "\033[36m"` #Blue
+    number=`echo "\033[33m"` #yellow
+    bgred=`echo "\033[41m"`
+    fgred=`echo "\033[31m"`
+YELLOW='\033[1;33m'
+printf "${menu}     © ᴘᴇɴᴇᴛʀᴀᴛᴏʀs                  ᴄᴏʀᴘᴏʀᴀᴛɪᴏɴ ©      "
+printf "${menu}           ♛ α cσмρℓεтεℓү αυтσмαтε∂ ρяσנεcт ♛         "
+cat /data/data/com.termux/files/home/Trident/pytransform/Trident | lolcat -a -d 5
+   ./Header
+    
+    printf "\n${menu}████████████████████████████████████████████████████████${normal}\n"
+    printf "\n${menu}██${number} 1)${menu} ʙʏᴘᴀss ᴋᴏʀᴇᴀ ${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 2)${menu} ʙʏᴘᴀss ɢʟᴏʙᴀʟ ${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 3)${menu} ᴄʟᴇᴀɴ ʟᴏɢs ${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 4)${menu} ʀᴇsᴇᴛ ɢᴜᴇsᴛ ${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 5)${menu} ᴄʜᴀɴɢᴇ ᴅɴs 𝟾.𝟾.𝟾.𝟾${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}████████████████████████████████████████████████████████${normal}\n"
+    printf "\n${fgred}Please enter a menu option and enter or ${fgred}x to exit. ${normal}"
+    read opt
+}
+
+option_picked(){
+    msgcolor=`echo "\033[01;31m"` # bold red
+    normal=`echo "\033[00;00m"` # normal white
+    message=${@:-"${normal}Error: No message passed"}
+    printf "${msgcolor}${message}${normal}\n"
+}
+
+clear
+echo " "
+echo " "
+show_menu
+while [ $opt != '' ]
+    do
+    if [ $opt = '' ]; then
+      exit;
+    else
+      case $opt in
+        1) clear;
+            option_picked "Pubg Korea Bypass\n";
+            printf "Starting Bypass...\n";
+            sleep 2
+start=`date +%s`
+runtime=$((end-start))
+normal=`echo "\033[m"`
+menu=`echo "\033[36m"` #Blue
+    number=`echo "\033[33m"` #yellow
+    bgred=`echo "\033[41m"`
+    fgred=`echo "\033[31m"`
+YELLOW='\033[1;33m'
+
+if [ -d "/data/data/com.termux/files/home/Trident/pytransform/mods/Paks" ] 
+then
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+rm -rf /storage/emulated/0/.backups/com.pubg.krmobile &> /dev/null
+rm -rf /storage/emulated/0/tencent/Midas/Log/com.pubg.krmobile &> /dev/null
+rm -rf /data/media/0/MidasOversea/GUID/* &> /dev/null
+
+if [ ! -d "/storage/emulated/0/Android/Trident.Korea" ] 
+then
+mkdir /storage/emulated/0/Android/Trident.Korea
+fi
+rsync -avh /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ /storage/emulated/0/Android/Trident.Korea/ &> /dev/null
+#mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* /storage/emulated/0/Android/Trident.Korea &> /dev/null
+sleep 9
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
+echo " "
+./progress
+echo " "
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+sleep 6
+chmod 664 /data/data/com.pubg.krmobile/lib/libtersafe.so
+chmod 664 /data/data/com.pubg.krmobile/lib/libUE4.so
+chmod 664 /data/data/com.pubg.krmobile/lib/libtprt.so
+sleep 20
+c=0
+PACKAGE='com.pubg.krmobile'
+while [ $(pidof $PACKAGE) ]
+do
+c=$((c+1))
+rm -rf /data/data/com.pubg.krmobile/app_appcache &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/app_bugly &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/cache &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/code_cache &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/app_crashrecord &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/google_app_measurement_local.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/pri_tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/xg_message.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/google_app_measurement_local.db &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/pri_tencent_analysis.db &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_issues-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_key_values-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_sessions-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_support_key_values-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/bugly_db_-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs_log_store-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/files/iMSDK &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/files/AppEventsLogger.persistedevents &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/files/tpnlcache.data &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+cp /data/data/com.termux/files/home/Trident/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_loglist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/tencent &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/Tencent &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/cache/* &> /dev/null
+rm -rf /sdcard/Tencent/beacon &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/blob/mqq &> /dev/null
+rm -rf /sdcard/Tencent/Midas/Log/com.pubg.krmobile &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_live_log/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_audio_data &> /dev/null
+rm -rf /sdcard/Tencent/tbs/backup/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.TbsReaderTempcom.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.thumbnails &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.tmp &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.trooptmp &> /dev/null
+rm -rf /sdcard/Tencent/msflogs/com/tencent/mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/.apollo/game &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/capture_qsvf &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/dov_ptv_template_dov &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/WebViewCheck &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/log &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/code_cache/* &> /dev/null
+printf "\n${fgred}██████████████████████████${normal}\n"
+printf "${menu}██████████"
+printf "${menu}Loop ${fgred}=> ${normal}$c"
+sleep 15
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+sleep 1
+done
+chmod 755 /data/data/com.pubg.krmobile/lib/libtersafe.so
+chmod 755 /data/data/com.pubg.krmobile/lib/libUE4.so
+chmod 755 /data/data/com.pubg.krmobile/lib/libtprt.so
+rm /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
+echo " "
+rsync -avh /storage/emulated/0/Android/Trident.Korea/ /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ &> /dev/null
+sleep 9
+rm -rf /storage/emulated/0/Android/Trident.Korea &> /dev/null
+end=`date +%s`
+runtime=$((end-start))
+runmin=$((runtime/60))
+echo " "
+printf "\n${fgred}███████████${menu}Total Execution Time : ${fgred}$runmin Minuts ${fgred}█████████████${normal}\n"
+echo " "
+./progress
+echo " "
+printf "${YELLOW}  Client Restored"
+echo " "
+else
+ echo "${YELLOW} Korea Support Is Not Available"
+fi
+            sleep 2
+            echo " "
+            echo "Exiting To Driver Code"
+            sleep 2
+            clear
+            show_menu;
+        ;;
+        2) clear;
+            option_picked "Global Bypass\n";
+            printf "Bypassing Global...\n";
+start=`date +%s`
+runtime=$((end-start))
+normal=`echo "\033[m"`
+menu=`echo "\033[36m"` #Blue
+    number=`echo "\033[33m"` #yellow
+    bgred=`echo "\033[41m"`
+    fgred=`echo "\033[31m"`
+YELLOW='\033[1;33m'
+
+if [ -d "/data/data/com.termux/files/home/Trident/pytransform/mods/Paks" ] 
+then
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
+rm -rf /storage/emulated/0/.backups/com.tencent.ig &> /dev/null
+rm -rf /data/media/0/MidasOversea/GUID/* &> /dev/null
+
+if [ ! -d "/storage/emulated/0/Android/Trident.Global" ] 
+then
+mkdir /storage/emulated/0/Android/Trident.Global
+fi
+
+rsync -avh /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ /storage/emulated/0/Android/Trident.Global/ &> /dev/null
+sleep 9
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
+base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
+echo " "
+./progress
+echo " "
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
+sleep 6
+chmod 664 /data/data/com.tencent.ig/lib/libtersafe.so
+chmod 664 /data/data/com.tencent.ig/lib/libUE4.so
+chmod 664 /data/data/com.tencent.ig/lib/libtprt.so
+sleep 20
+c=0
+PACKAGE='com.tencent.ig'
+while [ $(pidof $PACKAGE) ]
+do
+c=$((c+1))
+rm -rf /data/data/com.tencent.ig/app_appcache &> /dev/null
+rm -rf /data/data/com.tencent.ig/app_bugly &> /dev/null
+rm -rf /data/data/com.tencent.ig/cache &> /dev/null
+rm -rf /data/data/com.tencent.ig/code_cache &> /dev/null
+rm -rf /data/data/com.tencent.ig/app_crashrecord &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/google_app_measurement_local.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/pri_tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/xg_message.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/google_app_measurement_local.db &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/pri_tencent_analysis.db &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/bugly_db_-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/files/iMSDK &> /dev/null
+rm -rf /data/data/com.tencent.ig/files/AppEventsLogger.persistedevents &> /dev/null
+rm -rf /data/data/com.tencent.ig/files/tpnlcache.data &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+cp /data/data/com.termux/files/home/Trident/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_loglist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/tencent &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/Tencent &> /dev/null
+rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/ca-bundle.pem &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json &> /dev/null
+rm -rf /data/data/com.tencent.ig/cache/* &> /dev/null
+rm -rf /sdcard/Tencent/beacon &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/blob/mqq &> /dev/null
+rm -rf /sdcard/Tencent/Midas/Log/com.tencent.ig &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_live_log/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_audio_data &> /dev/null
+rm -rf /sdcard/Tencent/tbs/backup/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.TbsReaderTempcom.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.thumbnails &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.tmp &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.trooptmp &> /dev/null
+rm -rf /sdcard/Tencent/msflogs/com/tencent/mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/.apollo/game &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/capture_qsvf &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/dov_ptv_template_dov &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/WebViewCheck &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/log &> /dev/null
+rm -rf /data/data/com.tencent.ig/code_cache/* &> /dev/null
+printf "\n${fgred}██████████████████████████${normal}\n"
+printf "${menu}██████████"
+printf "${menu}Loop ${fgred}=> ${normal}$c"
+
+sleep 15
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+sleep 1
+done
+chmod 755 /data/data/com.tencent.ig/lib/libtersafe.so
+chmod 755 /data/data/com.tencent.ig/lib/libUE4.so
+chmod 755 /data/data/com.tencent.ig/lib/libtprt.so
+rm /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
+echo " "
+rsync -avh /storage/emulated/0/Android/Trident.Global/ /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ &> /dev/null
+sleep 9
+rm -rf /storage/emulated/0/Android/Trident.Global/*
+end=`date +%s`
+runtime=$((end-start))
+runmin=$((runtime/60))
+echo " "
+printf "\n${fgred}███████████${menu}Total Execution Time : ${fgred}$runmin Minuts ${fgred}█████████████${normal}\n"
+echo " "
+./progress
+echo " "
+printf "${YELLOW}  Client Restored"
+echo " "
+else
+ echo "${YELLOW} Global Support Is Not Available"
+fi
+            sleep 2
+            echo "Exiting To Driver Code"
+            sleep 2
+            clear
+            show_menu;
+        ;;
+        3) clear;
+            option_picked "Log Cleaner\n";
+            printf "Cleaning Logs...\n";
+            echo " "
+            ./progress
+            rm -rf /data/data/com.pubg.krmobile/app_appcache &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/app_bugly &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/cache &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/code_cache &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/app_crashrecord &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/google_app_measurement_local.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/pri_tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/xg_message.db-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/google_app_measurement_local.db &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/pri_tencent_analysis.db &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_issues-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_key_values-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_sessions-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs__db_support_key_values-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/bugly_db_-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/databases/__hs_log_store-journal &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/files/iMSDK &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/files/AppEventsLogger.persistedevents &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/files/tpnlcache.data &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+cp /data/data/com.termux/files/home/Trident/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_loglist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/tencent &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/Tencent &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/ca-bundle.pem &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/cacheFile.txt &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/vmpcloudconfig.json &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/cache/* &> /dev/null
+rm -rf /sdcard/Tencent/beacon &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/blob/mqq &> /dev/null
+rm -rf /sdcard/Tencent/Midas/Log/com.pubg.krmobile &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_live_log/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_audio_data &> /dev/null
+rm -rf /sdcard/Tencent/tbs/backup/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.TbsReaderTempcom.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.thumbnails &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.tmp &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.trooptmp &> /dev/null
+rm -rf /sdcard/Tencent/msflogs/com/tencent/mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/.apollo/game &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/capture_qsvf &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/dov_ptv_template_dov &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/WebViewCheck &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/log &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/code_cache/* &> /dev/null
+            rm -rf /data/data/com.tencent.ig/app_appcache &> /dev/null
+rm -rf /data/data/com.tencent.ig/app_bugly &> /dev/null
+rm -rf /data/data/com.tencent.ig/cache &> /dev/null
+rm -rf /data/data/com.tencent.ig/code_cache &> /dev/null
+rm -rf /data/data/com.tencent.ig/app_crashrecord &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/google_app_measurement_local.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/pri_tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/xg_message.db-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/google_app_measurement_local.db &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/pri_tencent_analysis.db &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_issues-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_key_values-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_sessions-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs__db_support_key_values-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/bugly_db_-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/databases/__hs_log_store-journal &> /dev/null
+rm -rf /data/data/com.tencent.ig/files/iMSDK &> /dev/null
+rm -rf /data/data/com.tencent.ig/files/AppEventsLogger.persistedevents &> /dev/null
+rm -rf /data/data/com.tencent.ig/files/tpnlcache.data &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+cp /data/data/com.termux/files/home/Trident/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_loglist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/tencent &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/Tencent &> /dev/null
+rm -rf /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/ca-bundle.pem &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/cacheFile.txt &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/vmpcloudconfig.json &> /dev/null
+rm -rf /data/data/com.tencent.ig/cache/* &> /dev/null
+rm -rf /sdcard/Tencent/beacon &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/blob/mqq &> /dev/null
+rm -rf /sdcard/Tencent/Midas/Log/com.tencent.ig &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_live_log/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_audio_data &> /dev/null
+rm -rf /sdcard/Tencent/tbs/backup/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.TbsReaderTempcom.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.thumbnails &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.tmp &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.trooptmp &> /dev/null
+rm -rf /sdcard/Tencent/msflogs/com/tencent/mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/.apollo/game &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/capture_qsvf &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/dov_ptv_template_dov &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/WebViewCheck &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/log &> /dev/null
+rm -rf /data/data/com.tencent.ig/code_cache/* &> /dev/null
+            sleep 2
+            echo " "
+            echo "Exiting To Driver Code"
+            sleep 2
+            clear
+            show_menu;
+        ;;
+        4) clear;
+            option_picked "Guest Reset\n";
+            printf "Resetting Your Guest Account...\n";
+            echo " "
+            KR="/data/data/com.pubg.krmobile/shared_prefs/device_id.xml"
+            kill com.pubg.krmobile 2> /dev/null
+            rm -rf $KR
+            echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name=\"random\"></string>
+    <string name=\"install\"></string>
+    <string name=\"uuid\">$RANDOM$RANDOM-$RANDOM-$RANDOM-$RANDOM-$RANDOM$RANDOM$RANDOM</string>
+</map>" > $KR
+./progress
+sleep 2
+            echo " "
+            echo "Exiting To Driver Code"
+            sleep 2
+            clear
+            show_menu;
+        ;;
+         5) clear;
+            option_picked "Dns Changer\n";
+            printf "Changing Dns...\n";
+            ./pytransform/__pycache__/google
+            echo " "
+            printf "Dns Changed To Google 8.8.8.8 On Port 53\n";
+           sleep 2
+            echo "Exiting To Driver Code"
+            sleep 2
+            clear
+             show_menu;
+        ;;
+        x)
+        
+printf "${YELLOW}Created by :-\n"
+printf "\n${YELLOW}________________________________________________________"
+printf "\n${YELLOW}           ______             _                 "
+printf "\n${YELLOW}          / _____)           | |                "
+printf "\n${YELLOW}         ( (____  _____  ____| |  _ _____  ____ "
+printf "\n${YELLOW}          \____ \(____ |/ ___| |_/ (____ |/ ___)"
+printf "\n${YELLOW}          _____) / ___ | |   |  _ (/ ___ | |    "
+printf "\n${YELLOW}         (______/\_____|_|   |_| \_\_____|_|  "
+printf "\n${YELLOW}________________________________________________________"
+        exit;
+        ;;
+        \n)exit;
+        ;;
+        *)clear;
+            option_picked "Pick an option from the menu";
+            show_menu;
+        ;;
+      esac
+    fi
+done

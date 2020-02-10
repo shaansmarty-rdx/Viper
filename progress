@@ -1,0 +1,10 @@
+#!/data/data/com.termux/files/usr/bin/python
+from tqdm.auto import tqdm
+from time import sleep
+def prRed(skk): print("\033[91m {}\033[00m" .format(skk)) 
+print(" ")
+prRed("Please Turn Host on Before Execution Of This Program")
+print(" ")
+sleep(4)
+for i in tqdm(range(5)):
+    sleep(1)

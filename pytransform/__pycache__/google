@@ -1,0 +1,11 @@
+#!/data/data/com.termux/files/usr/bin/python
+import socket
+from tqdm.auto import tqdm
+from time import sleep
+
+for i in tqdm(range(10)):
+    sleep(1)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.connect(("8.8.8.8", 53))
+print(s.getsockname()[0])
+s.close()
