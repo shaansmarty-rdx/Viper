@@ -12,12 +12,12 @@ cat /data/data/com.termux/files/home/Viper/pytransform/Trident | lolcat -a -d 5
    ./Header
     
     printf "\n${menu}████████████████████████████████████████████████████████${normal}\n"
-    printf "\n${menu}██${number} 1)${menu} 𝔹𝕐ℙ𝔸𝕊𝕊 𝕂𝕆ℝ𝔼𝔸ℕ ${normal}\n\n" | lolcat -a -d 3
-    printf "${menu}██${number} 2)${menu} 🅱🆈🅿🅰🆂🆂 🅶🅻🅾🅱🅰🅻 ${normal}\n\n" | lolcat -a -d 3
+    printf "\n${menu}██${number} 1)${menu} ＢＹＰＡＳＳ ＫＯＲＥＡＮ ${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 2)${menu} ＢＹＰＡＳＳ ＧＬＯＢＡＬ ${normal}\n\n" | lolcat -a -d 3
     printf "${menu}██${number} 3)${menu} ＢＹＰＡＳＳ ＶＥＩＴＮＡＭ ${normal}\n\n" | lolcat -a -d 3
-    printf "${menu}██${number} 4)${menu} 𝗖𝗟𝗘𝗔𝗡 𝗟𝗢𝗚𝗦 ${normal}\n\n" | lolcat -a -d 3
-    printf "${menu}██${number} 5)${menu} 𝗥𝗘𝗦𝗘𝗧 𝗚𝗨𝗘𝗦𝗧 ${normal}\n\n" | lolcat -a -d 3
-    printf "${menu}██${number} 6)${menu} 𝗖𝗛𝗔𝗡𝗚𝗘 𝗗𝗡𝗦 𝘁𝗼 𝟴.𝟴.𝟴.𝟴${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 4)${menu} ＣＬＥＡＮ ＬＯＧ ${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 5)${menu} ＲＥＳＥＴ ＧＵＥＳＴ ＡＣＣＯＵＮＴ ${normal}\n\n" | lolcat -a -d 3
+    printf "${menu}██${number} 6)${menu} ＣＨＡＮＧＥ ＤＮＳ 8.8.8.8 ${normal}\n\n" | lolcat -a -d 3
     printf "${menu}████████████████████████████████████████████████████████${normal}\n"
     printf "\n${fgred}Please enter a menu option and enter or ${fgred}x to exit. ${normal}"
     read opt
@@ -53,7 +53,7 @@ menu=`echo "\033[36m"` #Blue
     fgred=`echo "\033[31m"`
 YELLOW='\033[1;33m'
 
-if [ -d "/data/data/com.termux/files/home/Trident/pytransform/mods/Paks" ] 
+if [ -d "/data/data/com.termux/files/home/Viper/pytransform/mods/Paks" ] 
 then
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
 rm -rf /storage/emulated/0/.backups/com.pubg.krmobile &> /dev/null
@@ -67,11 +67,11 @@ fi
 rsync -avh /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ /storage/emulated/0/Android/Trident.Korea/ &> /dev/null
 #mv /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* /storage/emulated/0/Android/Trident.Korea &> /dev/null
 sleep 9
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
 echo " "
 ./progress
 echo " "
@@ -211,7 +211,7 @@ menu=`echo "\033[36m"` #Blue
     fgred=`echo "\033[31m"`
 YELLOW='\033[1;33m'
 
-if [ -d "/data/data/com.termux/files/home/Trident/pytransform/mods/Paks" ] 
+if [ -d "/data/data/com.termux/files/home/Viper/pytransform/mods/Paks" ] 
 then
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/AntiCheat.ini
 rm -rf /storage/emulated/0/.backups/com.tencent.ig &> /dev/null
@@ -224,11 +224,11 @@ fi
 
 rsync -avh /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ /storage/emulated/0/Android/Trident.Global/ &> /dev/null
 sleep 9
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-base64 --decode /data/data/com.termux/files/home/Trident/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
+base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
 echo " "
 ./progress
 echo " "
@@ -357,7 +357,7 @@ fi
             show_menu;
         ;;
          3) clear;
-            option_picked "PUBG VN BYPASS\n";
+            option_picked "ＰＵＢＧ ＶＮ ＢＹＰＡＳＳ\n";
             printf "Starting Bypass...\n";
             sleep 2
 start=`date +%s`
@@ -479,7 +479,7 @@ rm -rf /sdcard/Tencent/MobileQQ/WebViewCheck &> /dev/null
 rm -rf /sdcard/Tencent/MobileQQ/log &> /dev/null
 rm -rf /data/data/com.vng.pubgmobile/code_cache/* &> /dev/null
 printf "\n${fgred}██████████████████████████${normal}\n"
-printf "${menu}██████████"
+printf "${menu}Total Log Clean"
 printf "${menu}Loop ${fgred}=> ${normal}$c"
 sleep 10
 if [ ! $(pidof $PACKAGE) ]; then
@@ -551,7 +551,7 @@ rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTr
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
 rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
-cp /data/data/com.termux/files/home/Trident/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
+cp /data/data/com.termux/files/home/Viper/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
@@ -628,7 +628,7 @@ rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrack
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
 rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
-cp /data/data/com.termux/files/home/Trident/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
+cp /data/data/com.termux/files/home/Viper/pytransform/AntiCheat.ini /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android &> /dev/null
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
 rm -rf /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
