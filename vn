@@ -1,0 +1,152 @@
+
+echo "CONNECTING TO SERVER"
+iptables -I INPUT -s app.adjust.com -j DROP &>/dev/null
+iptables -I INPUT -s app-measurement.com -j DROP &>/dev/null
+iptables -I INPUT -s rtb.astrodsp.com -j DROP &>/dev/null
+iptables -I INPUT -s d3py17yaayq4xi.cloudfront.net -j DROP &>/dev/null
+iptables -I INPUT -s sin.creativecdn.com -j DROP &>/dev/null
+iptables -I INPUT -s statics-asia.creativecdn.com -j DROP &>/dev/null
+iptables -I INPUT -s data.flurry.com -j DROP &>/dev/null
+iptables -I INPUT -s .gameguardian.net -j DROP &>/dev/null
+iptables -I INPUT -s raw.githubusercontent.com -j DROP &>/dev/null
+iptables -I INPUT -s .helpshift.com -j DROP &>/dev/null
+iptables -I INPUT -s meping.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s file.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s euping.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s ig-us-notice.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s lobby.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s pay.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s saping.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s krping.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s public.igamecj.com -j DROP &>/dev/null
+iptables -I INPUT -s cloud.gsdk.proximabeta.com -j DROP &>/dev/null
+iptables -I INPUT -s www.pubgmobile.com -j DROP &>/dev/null
+iptables -I INPUT -s q.qlogo.cn -j DROP &>/dev/null
+iptables -I INPUT -s cs.mbgame.gamesafe.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s c.tdm.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s vmp.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s intldlgs.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s intl.cloud.tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s intl.mtp.tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s mtp@tencent.com -j DROP &>/dev/null
+iptables -I INPUT -s csoversea.mbgame.gamesafe.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s .qq.com -j DROP &>/dev/null
+iptables -I INPUT -s google.com -j DROP &>/dev/null
+iptables -I INPUT -s qq.com -j DROP &>/dev/null
+iptables -I INPUT -s napubgm.broker.tplay.qq.com -j DROP &>/dev/null
+iptables -I INPUT -s googleusercontent.com -j DROP &>/dev/null
+iptables -I INPUT -s .googleusercontent.com -j DROP &>/dev/null
+iptables -I INPUT -s 182.254.116.117/80 -j DROP &>/dev/null
+echo "" 
+echo "FIXING PING AND LAGGING"
+am force-stop org.telegram.m
+am force-stop com.myairtelapp
+am force-stop com.facebook.katana
+am force-stop com.jio.myjio
+am force-stop com.lenovo.anyshare.gps
+am force-stop com.taptap
+sleep 0.2
+am force-stop com.whatsapp
+sleep 0.2
+am force-stop com.whatsapp.w4b
+sleep 0.2
+am force-stop com.google.android.gm
+sleep 0.2
+am force-stop com.google.android.apps.maps
+am force-stop com.xiaomi.mipicks
+am force-stop com.android.vending
+am force-stop in.startv.hotstar
+am force-stop app.buzz.share
+sleep 0.2
+am force-stop com.nemo.vidmate
+sleep 2
+echo ""
+echo "STARTING GAME PUBG KOREAN 16.5 BYPASS"
+am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity
+sleep 5
+echo ""
+echo "INJECTING PERMISSIONS FROM SERVER"
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/libabase.so &> /dev/null
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/liblbs.so &> /dev/null
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/libtersafe.so &> /dev/null
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/libtprt.so &> /dev/null
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/libUE4.so &> /dev/null
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/libzip.so &> /dev/null
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/libzlib.so &> /dev/null
+echo "GETTING PACKAGES FROM SERVER"
+sleep 60
+echo "
+▄▀█ █░░ █░░   █░░ █▀█ █▀▀   █▀▀ █░░ █▀▀ ▄▀█ █▀█
+█▀█ █▄▄ █▄▄   █▄▄ █▄█ █▄█   █▄▄ █▄▄ ██▄ █▀█ █▀▄"
+echo "
+█▀ ▀█▀ ▄▀█ █▀█ ▀█▀ █ █▄░█ █▀▀
+▄█ ░█░ █▀█ █▀▄ ░█░ █ █░▀█ █▄█" 
+COUNT=1
+[ $COUNT ];
+cleaner()
+{
+rm -rf /data/user/0/com.vng.pubgmobile/shared_prefs &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/no_backup &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/files &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/databases &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/cache &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_crashrecord &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_bugly &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_geolocation &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_webview_imsdk_inner_webview &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_webview &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_textures &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_tbs &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_databases &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/app_appcache &> /dev/null
+rm -rf /data/user/0/com.vng.pubgmobile/code_cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ODPaks/ &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_loglist.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1950038955_3090_0.16.5.11560_20200108020124_1155095217_cures.ifs.res &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /storage/emulated/0/.backups &> /dev/null
+rm -rf /storage/emulated/0/tencent &> /dev/null
+#echo "Cleaning = $COUNT at $( date +"%H:%M:%S" )"
+let COUNT=COUNT+1
+} 
+PACKAGE='com.vng.pubgmobile'
+while [ $(pidof $PACKAGE) ]
+do
+cleaner
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+done
+sleep 2
+echo "" 
+echo "" 
+echo "Game stopped, Resetting all Files" 
+echo ""
+sleep 1
+((final=$COUNT+1))
+printf " █ NUMBER OF TIME CLEARED █---------> ";
+echo $final
+echo "" 
+sleep 1
+((report=$COUNT/500))
+printf "Number of report Stopped = ";
+echo $report
+echo "" 
+printf ">>>From All Reports we Finally stop ";
+echo $report "Report" 
+echo "To get access to the Server Database " 
+su -c iptables --flush
+echo "" 
+echo "~~~~~END~~~~~" 
