@@ -40,6 +40,7 @@ iptables -I INPUT -s 182.254.116.117/80 -j DROP &>/dev/null
 echo "" 
 echo "FIXING PING AND LAGGING"
 echo ""
+sleep 2
 echo "STARTING GAME PUBG KOREAN 16.5 BYPASS"
 am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity
 sleep 5
