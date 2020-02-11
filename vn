@@ -149,4 +149,9 @@ echo $report "Report"
 echo "To get access to the Server Database " 
 su -c iptables --flush
 echo "" 
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
+echo " "
+rsync -avh /storage/emulated/0/Android/Trident.Korea/ /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ &> /dev/null
+sleep 9
+rm -rf /storage/emulated/0/Android/Trident.Korea &> /dev/null
 echo "~~~~~END~~~~~" 
