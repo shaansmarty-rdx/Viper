@@ -39,27 +39,6 @@ iptables -I INPUT -s .googleusercontent.com -j DROP &>/dev/null
 iptables -I INPUT -s 182.254.116.117/80 -j DROP &>/dev/null
 echo "" 
 echo "FIXING PING AND LAGGING"
-am force-stop org.telegram.m
-am force-stop com.myairtelapp
-am force-stop com.facebook.katana
-am force-stop com.jio.myjio
-am force-stop com.lenovo.anyshare.gps
-am force-stop com.taptap
-sleep 0.2
-am force-stop com.whatsapp
-sleep 0.2
-am force-stop com.whatsapp.w4b
-sleep 0.2
-am force-stop com.google.android.gm
-sleep 0.2
-am force-stop com.google.android.apps.maps
-am force-stop com.xiaomi.mipicks
-am force-stop com.android.vending
-am force-stop in.startv.hotstar
-am force-stop app.buzz.share
-sleep 0.2
-am force-stop com.nemo.vidmate
-sleep 2
 echo ""
 echo "STARTING GAME PUBG KOREAN 16.5 BYPASS"
 am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity
