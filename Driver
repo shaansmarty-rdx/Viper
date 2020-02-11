@@ -7,7 +7,7 @@ normal=`echo "\033[m"`
     fgred=`echo "\033[31m"`
 YELLOW='\033[1;33m'
 printf "${fgred}         © 尺ᗪ乂 尸尺龱丿㠪⼕ㄒ ᐯ工尸㠪尺 ©      \n"
-printf "${menu}   ♛ A̲ C̲o̲m̲p̲l̲e̲t̲e̲l̲y̲ A̲u̲t̲o̲m̲a̲t̲e̲d̲ P̲r̲o̲j̲e̲c̲t̲ ♛         "
+printf "${menu}   ♛ A̲ C̲o̲m̲p̲l̲e̲t̲e̲l̲y̲ A̲u̲t̲o̲m̲a̲t̲e̲d̲ P̲r̲o̲j̲e̲c̲t̲ ♛         \n"
 cat /data/data/com.termux/files/home/Viper/pytransform/Trident | lolcat -a -d 5
    ./Header
     
