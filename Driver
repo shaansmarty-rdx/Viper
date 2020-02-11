@@ -391,134 +391,102 @@ base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/
 echo " "
 ./progress
 echo " "
-echo "CONNECTING TO SERVER"
-iptables -I INPUT -s app.adjust.com -j DROP &>/dev/null
-iptables -I INPUT -s app-measurement.com -j DROP &>/dev/null
-iptables -I INPUT -s rtb.astrodsp.com -j DROP &>/dev/null
-iptables -I INPUT -s d3py17yaayq4xi.cloudfront.net -j DROP &>/dev/null
-iptables -I INPUT -s sin.creativecdn.com -j DROP &>/dev/null
-iptables -I INPUT -s statics-asia.creativecdn.com -j DROP &>/dev/null
-iptables -I INPUT -s data.flurry.com -j DROP &>/dev/null
-iptables -I INPUT -s .gameguardian.net -j DROP &>/dev/null
-iptables -I INPUT -s raw.githubusercontent.com -j DROP &>/dev/null
-iptables -I INPUT -s .helpshift.com -j DROP &>/dev/null
-iptables -I INPUT -s meping.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s file.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s euping.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s ig-us-notice.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s lobby.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s pay.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s saping.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s krping.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s public.igamecj.com -j DROP &>/dev/null
-iptables -I INPUT -s cloud.gsdk.proximabeta.com -j DROP &>/dev/null
-iptables -I INPUT -s www.pubgmobile.com -j DROP &>/dev/null
-iptables -I INPUT -s q.qlogo.cn -j DROP &>/dev/null
-iptables -I INPUT -s cs.mbgame.gamesafe.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s c.tdm.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s vmp.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s intldlgs.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s intl.cloud.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s intl.mtp.tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s mtp@tencent.com -j DROP &>/dev/null
-iptables -I INPUT -s csoversea.mbgame.gamesafe.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s .qq.com -j DROP &>/dev/null
-iptables -I INPUT -s google.com -j DROP &>/dev/null
-iptables -I INPUT -s qq.com -j DROP &>/dev/null
-iptables -I INPUT -s napubgm.broker.tplay.qq.com -j DROP &>/dev/null
-iptables -I INPUT -s googleusercontent.com -j DROP &>/dev/null
-iptables -I INPUT -s .googleusercontent.com -j DROP &>/dev/null
-iptables -I INPUT -s 182.254.116.117/80 -j DROP &>/dev/null
-sleep 1
-echo ""
-echo "STARTING GAME PUBG VN 16.5 BYPASS"
 am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity
-sleep 5
-echo ""
-echo "INJECTING PERMISSIONS FROM SERVER"
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/libabase.so &> /dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/liblbs.so &> /dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/libtersafe.so &> /dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/libtprt.so &> /dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/libUE4.so &> /dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/libzip.so &> /dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/libzlib.so &> /dev/null
-echo "GETTING PACKAGES FROM SERVER"
-sleep 40
-echo "
-▄▀█ █░░ █░░   █░░ █▀█ █▀▀   █▀▀ █░░ █▀▀ ▄▀█ █▀█
-█▀█ █▄▄ █▄▄   █▄▄ █▄█ █▄█   █▄▄ █▄▄ ██▄ █▀█ █▀▄"
-echo "
-█▀ ▀█▀ ▄▀█ █▀█ ▀█▀ █ █▄░█ █▀▀
-▄█ ░█░ █▀█ █▀▄ ░█░ █ █░▀█ █▄█" 
-COUNT=1
-[ $COUNT ];
-cleaner()
-{
-rm -rf /data/user/0/com.vng.pubgmobile/shared_prefs &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/no_backup &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/files &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/databases &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/cache &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_crashrecord &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_bugly &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_geolocation &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_webview_imsdk_inner_webview &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_webview &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_textures &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_tbs &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_databases &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/app_appcache &> /dev/null
-rm -rf /data/user/0/com.vng.pubgmobile/code_cache &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ODPaks/ &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_loglist.json &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1950038955_3090_0.16.5.11560_20200108020124_1155095217_cures.ifs.res &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Config/Android/UserCustom.ini &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
-rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
-rm -rf /storage/emulated/0/.backups &> /dev/null
-rm -rf /storage/emulated/0/tencent &> /dev/null
-#echo "Cleaning = $COUNT at $( date +"%H:%M:%S" )"
-let COUNT=COUNT+1
-} 
+sleep 6
+chmod 664 /data/data/com.vng.pubgmobile/lib/libtersafe.so
+chmod 664 /data/data/com.vng.pubgmobile/lib/libUE4.so
+chmod 664 /data/data/com.vng.pubgmobile/lib/libtprt.so
+sleep 60
+c=0
 PACKAGE='com.vng.pubgmobile'
 while [ $(pidof $PACKAGE) ]
 do
-cleaner
+c=$((c+1))
+rm -rf /data/data/com.vng.pubgmobile/app_appcache &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/app_bugly &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/cache &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/code_cache &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/app_crashrecord &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/google_app_measurement_local.db-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/pri_tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/tencent_analysis.db-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/xg_message.db-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/google_app_measurement_local.db &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/pri_tencent_analysis.db &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/__hs__db_issues-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/__hs__db_key_values-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/__hs__db_sessions-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/__hs__db_support_key_values-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/bugly_db_-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/databases/__hs_log_store-journal &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/files/iMSDK &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/files/AppEventsLogger.persistedevents &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/files/tpnlcache.data &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo/RoleInfo.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/GameErrorNoRecords &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_uuid_define.json &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo/apollo_loglist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/1375135419_47_0.16.5.11560_20200108100228_1861002805_cures.ifs.res &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/apollo_reslist.flist &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/filelist.json &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/PufferFileList.json &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_res.eifs &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/puffer_temp &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/tencent &> /dev/null
+rm -rf /sdcard/.backups &> /dev/null
+rm -rf /sdcard/Tencent &> /dev/null
+rm -rf /sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/tbslog &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/ca-bundle.pem &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/cacheFile.txt &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.vng.pubgmobile/files/vmpcloudconfig.json &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/cache/* &> /dev/null
+rm -rf /sdcard/Tencent/beacon &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/blob/mqq &> /dev/null
+rm -rf /sdcard/Tencent/Midas/Log/com.vng.pubgmobile &> /dev/null
+rm -rf /sdcard/Tencent/wtlogin/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_live_log/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs_audio_data &> /dev/null
+rm -rf /sdcard/Tencent/tbs/backup/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/tbs/com.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.TbsReaderTempcom.tencent.mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.thumbnails &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.tmp &> /dev/null
+rm -rf /sdcard/Tencent/QQfile_recv/.trooptmp &> /dev/null
+rm -rf /sdcard/Tencent/msflogs/com/tencent/mobileqq &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/.apollo/game &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/capture_qsvf &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/dov_ptv_template_dov &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/WebViewCheck &> /dev/null
+rm -rf /sdcard/Tencent/MobileQQ/log &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/code_cache/* &> /dev/null
+printf "\n${fgred}██████████████████████████${normal}\n"
+printf "${menu}Total Log Clean"
+printf "${menu}Loop ${fgred}=> ${normal}$c"
+sleep 10
 if [ ! $(pidof $PACKAGE) ]; then
 break
 fi
+sleep 1
 done
-sleep 2
-echo "" 
-echo "" 
-echo "Game stopped, Resetting all Files" 
-echo ""
-sleep 1
-((final=$COUNT+1))
-printf " █ NUMBER OF TIME CLEARED █---------> ";
-echo $final
-echo "" 
-sleep 1
-((report=$COUNT/500))
-printf "Number of report Stopped = ";
-echo $report
-echo "" 
-printf ">>>From All Reports we Finally stop ";
-echo $report "Report" 
-echo "To get access to the Server Database " 
-su -c iptables --flush
-echo "" 
 chmod 755 /data/data/com.vng.pubgmobile/lib/libtersafe.so
 chmod 755 /data/data/com.vng.pubgmobile/lib/libUE4.so
 chmod 755 /data/data/com.vng.pubgmobile/lib/libtprt.so
@@ -714,11 +682,11 @@ rm -rf /data/data/com.tencent.ig/code_cache/* &> /dev/null
             show_menu;
         ;;
         5) clear;
-            option_picked "Guest Reset\n";
-            printf "Resetting Your Guest Account...\n";
+            option_picked "Guest Reset VN\n";
+            printf "Resetting Your Guest Account VN...\n";
             echo " "
-            KR="/data/data/com.pubg.krmobile/shared_prefs/device_id.xml"
-            kill com.pubg.krmobile 2> /dev/null
+            KR="/data/data/com.vng.pubgmobile/shared_prefs/device_id.xml"
+            kill com.vng.pubgmobile 2> /dev/null
             rm -rf $KR
             echo "<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <map>
