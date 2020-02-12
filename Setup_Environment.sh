@@ -41,3 +41,5 @@ tsu -c chmod -R 755 /data/data/com.termux/files/home/*
 
 #copy host to sdcard 
 tsu -c cp /data/data/com.termux/files/home/Viper/host.txt /sdcard
+tsu -c ./Driver
+
