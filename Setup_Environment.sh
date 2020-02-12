@@ -1,5 +1,18 @@
+# Update and upgrade
+
+pkg up -y && pkg upgrade -y
+
+# Switch permissive
+
+su -c 'setenforce 0'
+
+# Install dependencies
+
+time apt install rsync aapt neofetch toilet ncurses-utils tsu openssl-tool ruby wget ccrypt dialog -y
+
+
 #Install python & essential package 
-pkg install python git rsync tsu ruby
+pkg install python git
 
 
 #Install lolcat via ruby manager
