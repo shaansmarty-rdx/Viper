@@ -382,15 +382,9 @@ mkdir /storage/emulated/0/Android/Trident.Korea
 fi
 rsync -avh /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/ /storage/emulated/0/Android/Trident.Korea/ &> /dev/null
 #mv /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* /storage/emulated/0/Android/Trident.Korea &> /dev/null
-sleep 9
-base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.0.11462.pak
-base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.16.5.11560.pak
-base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11463.pak
-base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11464.pak
-base64 --decode /data/data/com.termux/files/home/Viper/🔱 > /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.16.0.11466.pak
 echo " "
 ./progress
-bash ./vn
+tsudo ./vn
 end=`date +%s`
 runtime=$((end-start))
 runmin=$((runtime/60))
