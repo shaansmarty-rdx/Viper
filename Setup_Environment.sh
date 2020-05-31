@@ -22,6 +22,9 @@ gem install lolcat
 #Install TQDM module
 pip install tqdm
 
+#Update Pip version to 20.1.1
+pip install --upgrade pip
+
 
 #Remove Previous version file
 tsu -c rm -rf /data/data/com.termux/files/home/Viper
